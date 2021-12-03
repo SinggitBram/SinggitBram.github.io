@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top" style="background-color:#e5e5e5">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="bi bi-x-diamond"></i><i class="bi bi-x-diamond-fill"></i><i
-                    class="bi bi-x-diamond"></i></a>
+                    class="bi bi-x-diamond"></i><i class="bi bi-x-diamond-fill"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
     <section class="jumbotron text-center">
         <img src="img/Singgit_Bramantha.jpg" alt="Singgit Bramantha" width="300" class="rounded-circle img-thumbnail">
         <h1 class="display-4">Singgit Bramantha</h1>
-        <p class="lead">Javascript Developer</p>
+        <p class="lead"></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#fff" fill-opacity="1"
                 d="M0,192L60,170.7C120,149,240,107,360,112C480,117,600,171,720,208C840,245,960,267,1080,245.3C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
@@ -125,7 +125,7 @@
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
-                        <img src="./img/6.jpg" class="card-img-top" alt="Project6">
+                        <img src="./img/8.jpg" class="card-img-top" alt="Project6">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
-                        <img src="./img/7.jpg" class="card-img-top" alt="Project7">
+                        <img src="./img/6.jpg" class="card-img-top" alt="Project7">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
@@ -144,7 +144,7 @@
 
                 <div class="col-md-4 mb-3">
                     <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
-                        <img src="./img/8.jpg" class="card-img-top" alt="Project8">
+                        <img src="./img/3.jpg" class="card-img-top" alt="Project8">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
@@ -153,6 +153,40 @@
                 </div>
             </div>
         </div>
+
+        <section id="my-keyboards">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h2>My Consoles</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="keyboard-box">
+                            <h4 class="keyboard-name">PlayStation 4</h4>
+                            <img src="img/keyboard/5.png" alt="" class="keyboard-img">
+                            <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="keyboard-box">
+                            <h4 class="keyboard-name">XboX</h4>
+                            <img src="img/keyboard/6.png" alt="" class="keyboard-img">
+                            <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="keyboard-box">
+                            <h4 class="keyboard-name">Nintendo Switch</h4>
+                            <img src="img/keyboard/1.png" alt="" class="keyboard-img">
+                            <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#fff" fill-opacity="1"
                 d="M0,64L48,58.7C96,53,192,43,288,80C384,117,480,203,576,218.7C672,235,768,181,864,176C960,171,1056,213,1152,234.7C1248,256,1344,256,1392,256L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -293,6 +327,19 @@
         AOS.init();
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Javascript FullStack Developer' })
+        gsap.from('.jumbotron img', { duration: 1, rotateY: 360, opacity: 0 })
+        gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' })
+        gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' })
+
+
+    </script>
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzOFOZljxJC2qtaVrtCi5Dw_X0mqZQZMNDna16g5u5283mPk8Z3nngVkTra-gNQjsfxQQ/exec'
         const form = document.forms["portfolio-contact-form"]
@@ -315,6 +362,14 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+            max: 30,
+            speed: 1000,
+            glare:true
+        });
     </script>
 </body>
 
